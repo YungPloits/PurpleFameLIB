@@ -1,9 +1,5 @@
 
-
-
-
-
-local PurpleFameLib = {}
+local Library = {}
 local TS 	  = game:GetService("TweenService")
 local RS	  = game:GetService("RunService")
 local UIS 	  = game:GetService("UserInputService")
@@ -60,12 +56,12 @@ end
 
 
 
-function PurpleFameLib:newWindow(Title: string)
+function Library:newWindow(Title: string)
 	local window = {
 		CurrentTab = nil
 	}
 	
-	local PurpleFameUI = Instance.new('ScreenGui', game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+	local PurpleFameUI = Instance.new('ScreenGui', RS:IsStudio() and game.Players.LocalPlayer.PlayerGui or game:GetService("CoreGui"))
 	local MainFrame = Instance.new('Frame', PurpleFameUI)
 	local TopBar = Instance.new('Frame', MainFrame)
 	local TopBarCorner = Instance.new('UICorner', TopBar)
@@ -465,4 +461,3 @@ function PurpleFameLib:newWindow(Title: string)
 	
 	return window
 end
-
