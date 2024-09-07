@@ -1,12 +1,13 @@
 # PurpleFame LIB
 -- Made By Zyro :D:
 
-# Creating A Window
+# Have This At Top Of EveryThing!!
 ```lua
-local PurpleFameLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/YungPloits/PurpleFameLIB/main/uicode'))()
-local PurpleFameUI = PurpleFameLib:newWindow("PurpleFame")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/YungPloits/PurpleFameLIB/main/uicode'))()
+```
+
 ```
 # Creating A Tab
 ```lua
-local t1 = PurpleFameUI:newTab("Tab")
+local t1 = PurpleFameUI:newTab("Catching")
 ```
